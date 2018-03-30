@@ -13,6 +13,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/assets/res/favicon.ico">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
     {% for css in layout.css %}
     {% if css contains "//" %}
@@ -51,9 +52,76 @@
         <li>
           <div class="userView">
             <div class="background"></div>
-            <a href="{{site.github_profile}}" target="_blank"><img class="circle z-depth-2" src="{{site.baseurl}}/assets/res/user.png"></a>
+            <a href="{{site.github_profile}}" target="_blank"><img class="circle z-depth-2" src="{{site.github.owner_gravatar_url}}"></a>
             <span class="white-text name">{{site.user}}</span>
             <span class="white-text email">{{site.user_email}}</span>
+            <span class="white-text" style="font-size:2em;">
+              {% if site.social.github %}
+              <a title="{{site.social.github}} na GitHub" href="https://github.com/{{site.social.github}}">
+                <i class="fab fa-github"></i>
+              </a>
+              {% endif %}
+              
+              {% if site.social.bitbucket %}
+              <a title="{{site.social.bitbucket}} na BitBucket" href="https://bitbucket.com/{{site.social.bitbucket}}">
+                <i class="fab fa-bitbucket"></i>
+              </a>
+              {% endif %}
+              
+              {% if site.social.hacker_news %}
+              <a title="{{site.social.hacker_news}} na Hacker News" href="https://news.ycombinator.com/user?id={{site.social.hacker_news}}">
+                <i class="fab fa-hacker-news"></i>
+              </a>
+              {% endif %}
+              
+              {% if site.social.stackexchange %}
+               <a title="{{site.user}} na Stack Exchange" href="https://stackexchange.com/users/{{site.social.stackexchange}}">
+                 <i class="fab fa-stack-exchange"></i>
+               </a>
+              {% endif %}
+              
+              {% if site.social.stackoverflow %}
+              <a title="{{site.user}} na Stack Overflow" href="http://stackoverflow.com/users/{{site.social.stackoverflow}}">
+                <i class="fab fa-stack-overflow"></i>
+              </a>
+              {% endif %}
+              
+              {% if site.social.twitter %}
+              <a title="{{site.social.twitter}} na Twitter" href="https://twitter.com/{{site.social.twitter}}">
+                <i class="fab fa-twitter"></i>
+              </a>
+              {% endif %}
+              
+              {% if site.social.facebook %}
+              <a title="{{site.user}} na Facebook" href="https://facebook.com/{{site.social.facebook}}">
+                <i class="fab fa-facebook"></i>
+              </a>
+              {% endif %}
+              
+              {% if site.social.tumblr %}
+              <a title="{{site.user}} na Tumblr" href="https://{{site.social.tumblr}}.tumblr.com">
+                <i class="fab fa-tumblr"></i>
+              </a>
+              {% endif %}
+              
+              {% if site.social.linkedin %}
+              <a title="{{site.user}} na LinkedIn" href="https://www.linkedin.com/in/{{site.social.linkedin}}">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              {% endif %}
+              
+              {% if site.social.gplus %}
+              <a title="{{site.user}} na Google Plus" href="https://plus.google.com/{{site.social.gplus}}">
+                <i class="fab fa-google-plus"></i>
+              </a>
+             {% endif %}
+             
+             {% if site.social.flickr %}
+             <a title="{{site.user}} na Flickr" href="https://www.flickr.com/photos/{{site.social.flickr}}">
+               <i class="fab fa-flickr"></i>
+             </a>
+             {% endif %}
+            </span>
           </div>
         </li>
         <li><a class="waves-effect" href="{{site.baseurl}}/"><i class="material-icons">home</i>Prispevki</a></li>

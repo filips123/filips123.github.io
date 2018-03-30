@@ -22,7 +22,7 @@ permalink: "/:year/:month/:day/:title"
 repository: "filips123/filips123.github.io"
 paginate: 5
 
-# MatJek specific configurations
+# MatJek Specific Configurations
 github_profile: "https://github.com/filips123/"
 user: "Filip Š"
 user_email: "projects@filips.si"
@@ -31,7 +31,21 @@ user_email: "projects@filips.si"
 # google_site_verification: "UA-96359860-1"
 disqus_shortname: "filips-projects"
 
-# Build settings
+# Social Links
+social:
+  github: filips123
+  # bitbucket: 
+  # hacker_news: 
+  stackexchange: 8621884
+  # stackoverflow: 
+  twitter: filipssi
+  facebook: filips.si
+  # tumblr: 
+  linkedin: 
+  gplus: +FilipsSi
+  # flickr: 
+
+# Build Settings
 timezone: Europe/Ljubljana
 markdown: kramdown
 plugins:
