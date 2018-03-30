@@ -1,16 +1,24 @@
 <div class="col s12 tag-div">
   <div class="user-pic center-align">
-    <a href="{{site.github_profile}}" target="_blank"><img class="circle hoverable z-depth-1" src="{{site.baseurl}}/assets/res/user.png"></a>
+    <a href="{{site.github_profile}}" target="_blank"><img class="circle hoverable z-depth-1" src="{{site.github.owner_gravatar_url}}"></a>
   </div>
   <div class="user-intro center-align">
-    <h4 class="hidden">I am a <span id="js-rotating">So Simple, Very Doge, Much Wow, Such Cool</span> Text Rotator</h4>
+    <h4 class="hidden">To so Filipovi <span id="js-rotating">fantastični, odlični, prečudoviti, uporabni</span> GitHub projekti!</h4>
   </div>
   <div class="user-content">
     <p>
-      Īn delectus tǣcimates perīculā sīt, duō et ƿisl justo oporteat. Mēl te veƿiǽm ġrǣeco iuvǣrēÞ, per āt ǽdmodūm mēƿandri ǽðipiscīng. Eæ qui dicō ǣlia essēnÞ, āt ƿec fugit eraƿt æppǣreǽÞ. Cu ēæm omnes plaċerāt.
+      Na tej strani si lahko ogledate vse moje <a href="{{site.baseurl}}/projects">GitHub projekte</a>. Na voljo so njiovi <a href="{{site.baseurl}}">vodiči in primeri uporabe</a>. Ogledate si lahko tudi ideje za bodoče projekte.
     </p>
+    
+    {% if site.websites %}
     <p>
-      Lorem ipsum ðolor sit amēt, per hǣrum soleǽt convenire et. Diċo dolōrum qualisque meī ēt, ius æƿ modus facilisi dīspūtaÞioƿī. Ei puteƿÞ vērear quo, ne sit stet sǣpientēm ċoncepÞam. Sed prōbo virtute voluptariā ūt. Ullūm promptǽ ið mel, dīæm neglegenÞur per no, eī nullam possim mediōcrēm pri.
+      <strong>Druge strani:</strong>
     </p>
+    <ul>
+      {% for website in site.websites %}
+	  <li><a href="{{website.url}}" title="{{website.name}}">{{website.name}} ({{website.url}})</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
   </div>
 </div>
