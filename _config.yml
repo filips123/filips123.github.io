@@ -19,6 +19,7 @@ description: Spletna stran s Filipovimi GitHub projekti.
 # url: "https://projects.filips.si/"
 permalink: "/:year/:month/:day/:title"
 repository: "filips123/filips123.github.io"
+excerpt_separator: "<!--more-->"
 paginate: 5
 
 # MatJek Specific Configurations
