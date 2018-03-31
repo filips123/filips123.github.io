@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "PHP config"
-date:   2015-05-26 16:29:43 +0200
+date:   2016-05-26 16:29:43 +0200
 categories: Projekti
 tags: projekti PHP konfiguracija
 comments: 1
