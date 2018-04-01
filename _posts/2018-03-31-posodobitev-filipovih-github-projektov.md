@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Posodobitev Filipovih GitHub projektov"
-date:   2018-03-31 20:38:54 +0200
+title: "Posodobitev Filipovih GitHub projektov"
+date: 2018-03-31 20:38:54 +0200
 categories: Obvestila
 tags: obvestila posodobitve
 comments: 1

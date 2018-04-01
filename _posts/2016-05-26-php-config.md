@@ -1,19 +1,19 @@
 ---
 layout: post
-title:  "PHP config"
-date:   2016-05-26 16:29:43 +0200
+title: "PHP config"
+date: 2016-05-26 16:29:43 +0200
 categories: Projekti
 tags: projekti PHP konfiguracija
+project: https://github.com/filips123/php-config/
 comments: 1
 ---
-PHP config je PHP paket za enostavno zapisovanje konfiguracijskih datotek v navadni ali razredni obliki. Na voljo je na spletni strani [https://github.com/filips123/php-config/](https://github.com/filips123/php-config/).
+PHP config je PHP paket za enostavno zapisovanje konfiguracijskih datotek v navadni ali razredni obliki.
 
 <!--more-->
 
-## Namestitev
-Vse datoteke razen README.md prenesite na strežnik.
+## Namestitev in uporaba
+Vse datoteke, razen `.travis.yml`, `README.md` in `composer.json`  prenesite na strežnik.
 
-## Uporaba
 ### Zapisovanje pdatkov
 * Najprej vpišite kodo:
 {% highlight php %}
