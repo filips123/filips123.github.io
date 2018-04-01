@@ -13,6 +13,12 @@ js: ["post.js"]
           {{page.date | date: "%d.%m.%Y %H:%M"}}
           <i id="indicate" class="right material-icons tooltipped" data-position="left" data-delay="30" data-tooltip="Prikaži dodatne informacije">info</i>
         </span>
+        {% if page.project %}
+        <span>
+          <i class="material-icons tooltipped" data-position="left" data-delay="30" data-tooltip="GitHub povezava">link</i>
+          <a href="{{page.project}}" target="_blank">{{page.project}}</a>
+        </span>
+        {% endif %}
       </div>
       <div class="collapsible-body">
         <span>
