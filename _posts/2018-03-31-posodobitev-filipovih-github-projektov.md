@@ -6,6 +6,7 @@ categories: Obvestila
 tags: obvestila posodobitve
 comments: 1
 ---
+
 Danes je bila izvedena posodobitev Filipovih GitHub projektov. Stran ima zdaj novo podobo.
 
 <!--more-->
