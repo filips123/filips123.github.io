@@ -22,6 +22,17 @@ js: ["post.js"]
       </div>
       <div class="collapsible-body">
         <span>
+          {% if page.technologies %}
+          <i class="material-icons tooltipped" data-position="left" data-delay="30" data-tooltip="Tehnologije">developer_board</i>
+          {% for tech in page.technologies %}
+          {% capture test %}{{tech | slice: 0}}{% endcapture %}
+          {% capture testup %}{{tech | slice: 0 | upcase}}{% endcapture %}
+          <a href="{{site.baseurl}}/technologies#{{tech | slugify}}{% if test == testup %}_cap{% endif %}" target="_blank"><div class="chip">{{tech}}</div></a>
+          {% endfor %}
+        </span>
+        {% endif %}
+        {% if page.categories %}
+        <span>
           <i class="material-icons tooltipped" data-position="left" data-delay="30" data-tooltip="Kategorije">sort</i>
           {% for cat in page.categories %}
           {% capture test %}{{cat | slice: 0}}{% endcapture %}
@@ -29,6 +40,8 @@ js: ["post.js"]
           <a href="{{site.baseurl}}/categories#{{cat | slugify}}{% if test == testup %}_cap{% endif %}" target="_blank"><div class="chip">{{cat}}</div></a>
           {% endfor %}
         </span>
+        {% endif %}
+        {% if page.tags %}
         <span>
           <i class="material-icons tooltipped" data-position="left" data-delay="30" data-tooltip="Oznake">label</i>
           {% for tag in page.tags %}
@@ -37,6 +50,7 @@ js: ["post.js"]
           <a href="{{site.baseurl}}/tags#{{tag | slugify}}{% if test == testup %}_cap{% endif %}" target="_blank"><div class="chip">{{tag}}</div></a>
           {% endfor %}
         </span>
+        {% endif %}
       </div>
     </li>
   </ul>

@@ -1,0 +1,38 @@
+<div class="col s12 tech-div">
+  {% for post in site.posts %}
+  {% assign techs = post.technologies | split: ' ' %}
+  {% assign technologies = technologies | concat: techs | uniq %}
+  {% endfor %}
+  <div class="tech-list">
+    {% for tech in technologies %}
+    {% if tech != "" %}
+    {% capture test %}{{tech | slice: 0}}{% endcapture %}
+    {% capture testup %}{{tech | slice: 0 | upcase}}{% endcapture %}
+    <a class="tech-chip" href="#{{tech | slugify}}{% if test == testup %}_cap{% endif %}"><div class="chip z-depth-1">{{tech}}</div></a>
+    {% endif %}
+    {% endfor %}
+  </div>
+  <div class="divider"></div>
+  <div class="tech-index">
+    {% for tech in technologies %}
+    {% if tech != "" %}
+    {% capture test %}{{tech | slice: 0}}{% endcapture %}
+    {% capture testup %}{{tech | slice: 0 | upcase}}{% endcapture %}
+    <h4 id="{{tech | slugify}}{% if test == testup %}_cap{% endif %}">{{tech}}</h4>
+    {% assign posts = site.posts | sort: 'date' %}
+    <ul class="tech-post">
+      {% for post in posts %}
+      {% if post.technologies contains tech %}
+      <a class="post-title" href="{{site.baseurl}}{{post.url}}" target="_blank">
+        <li>
+          {{post.title}}
+          <small class="post-date">{{post.date | date_to_string}}</small>
+        </li>
+      </a>
+      {% endif %}
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
