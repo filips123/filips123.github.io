@@ -6,9 +6,7 @@
   <div class="tech-list">
     {% for tech in technologies %}
     {% if tech != "" %}
-    {% capture test %}{{tech | slice: 0}}{% endcapture %}
-    {% capture testup %}{{tech | slice: 0 | upcase}}{% endcapture %}
-    <a class="tech-chip" href="#{{tech | slugify}}{% if test == testup %}_cap{% endif %}"><div class="chip z-depth-1">{{tech}}</div></a>
+    <a class="tech-chip" href="#{{tech | slugify}}"><div class="chip z-depth-1">{{tech}}</div></a>
     {% endif %}
     {% endfor %}
   </div>
@@ -16,9 +14,7 @@
   <div class="tech-index">
     {% for tech in technologies %}
     {% if tech != "" %}
-    {% capture test %}{{tech | slice: 0}}{% endcapture %}
-    {% capture testup %}{{tech | slice: 0 | upcase}}{% endcapture %}
-    <h4 id="{{tech | slugify}}{% if test == testup %}_cap{% endif %}">{{tech}}</h4>
+    <h4 id="{{tech | slugify}}">{{tech}}</h4>
     {% assign posts = site.posts | sort: 'date' %}
     <ul class="tech-post">
       {% for post in posts %}

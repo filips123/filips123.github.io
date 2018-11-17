@@ -24,10 +24,9 @@ js: ["post.js"]
         <span>
           {% if page.technologies %}
           <i class="material-icons tooltipped" data-position="left" data-delay="30" data-tooltip="Tehnologije">developer_board</i>
-          {% for tech in page.technologies %}
-          {% capture test %}{{tech | slice: 0}}{% endcapture %}
-          {% capture testup %}{{tech | slice: 0 | upcase}}{% endcapture %}
-          <a href="{{site.baseurl}}/technologies#{{tech | slugify}}{% if test == testup %}_cap{% endif %}" target="_blank"><div class="chip">{{tech}}</div></a>
+          {% assign technologies = page.technologies | split: ' ' %}
+          {% for tech in technologies %}
+          <a href="{{site.baseurl}}/technologies#{{tech | slugify}}" target="_blank"><div class="chip">{{tech}}</div></a>
           {% endfor %}
         </span>
         {% endif %}
@@ -35,9 +34,7 @@ js: ["post.js"]
         <span>
           <i class="material-icons tooltipped" data-position="left" data-delay="30" data-tooltip="Kategorije">sort</i>
           {% for cat in page.categories %}
-          {% capture test %}{{cat | slice: 0}}{% endcapture %}
-          {% capture testup %}{{cat | slice: 0 | upcase}}{% endcapture %}
-          <a href="{{site.baseurl}}/categories#{{cat | slugify}}{% if test == testup %}_cap{% endif %}" target="_blank"><div class="chip">{{cat}}</div></a>
+          <a href="{{site.baseurl}}/categories#{{cat | slugify}}" target="_blank"><div class="chip">{{cat}}</div></a>
           {% endfor %}
         </span>
         {% endif %}
@@ -45,9 +42,7 @@ js: ["post.js"]
         <span>
           <i class="material-icons tooltipped" data-position="left" data-delay="30" data-tooltip="Oznake">label</i>
           {% for tag in page.tags %}
-          {% capture test %}{{tag | slice: 0}}{% endcapture %}
-          {% capture testup %}{{tag | slice: 0 | upcase}}{% endcapture %}
-          <a href="{{site.baseurl}}/tags#{{tag | slugify}}{% if test == testup %}_cap{% endif %}" target="_blank"><div class="chip">{{tag}}</div></a>
+          <a href="{{site.baseurl}}/tags#{{tag | slugify}}" target="_blank"><div class="chip">{{tag}}</div></a>
           {% endfor %}
         </span>
         {% endif %}
