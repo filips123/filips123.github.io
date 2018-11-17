@@ -2,8 +2,9 @@
 layout: post
 title: "Tekmovanje Astro Pi 2017/18 - Ekipa Jakopičevca"
 date: 2018-04-01 20:27:23 +0200
+technologies: Python RaspberryPi SenseHat
 categories: Projekti
-tags: projekti Python RaspberryPi AstroPi
+tags: znanost astronomija
 project: https://github.com/filips123/jakopicevca/
 comments: 1
 ---

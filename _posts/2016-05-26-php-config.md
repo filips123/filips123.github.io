@@ -2,8 +2,9 @@
 layout: post
 title: "PHP config"
 date: 2016-05-26 16:29:43 +0200
+technologies: PHP
 categories: Projekti
-tags: projekti PHP konfiguracija
+tags: konfiguracija nastavitve
 project: https://github.com/filips123/php-config/
 comments: 1
 ---
