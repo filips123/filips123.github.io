@@ -1,17 +1,20 @@
 ---
 layout: post
-title: "PHP config"
+title: "PHP Config Writer v1"
 date: 2016-05-26 16:29:43 +0200
-technologies: PHP
 categories: Projekti
 tags: konfiguracija nastavitve
-project: https://github.com/filips123/php-config/
+project: https://github.com/filips123/ConfigWriter/
+technologies: PHP
+license: MIT
 comments: 1
 ---
 
-PHP config je PHP knjižnjica za enostavno zapisovanje konfiguracijskih datotek v navadni ali razredni obliki.
+PHP Config Writer je PHP knjižnjica za enostavno zapisovanje konfiguracijskih datotek v navadni ali razredni obliki.
 
 <!--more-->
+
+**Ta različica je zastarela. Uporabite [novo različico v2](../../../2018/11/17/php-config-writer-v2).**
 
 ## Namestitev in uporaba
 
