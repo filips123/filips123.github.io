@@ -10,9 +10,11 @@ license: GPL-3.0-or-later
 comments: 1
 ---
 
-![BlogChain Logo](https://vectr.com/filips123/b1Bzz8jXxa.png?width=500&height=100&select=b1Bzz8jXxapage0)
-
 Decentralizirani spletni dnevnik s pomočjo pametnih pogodb Ethereum in Web3.
+
+<!--more-->
+
+![BlogChain Logo](https://vectr.com/filips123/b1Bzz8jXxa.png?width=500&height=100&select=b1Bzz8jXxapage0)
 
 ## Opis
 
