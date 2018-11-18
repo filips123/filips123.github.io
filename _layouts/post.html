@@ -21,15 +21,6 @@ js: ["post.js"]
         {% endif %}
       </div>
       <div class="collapsible-body">
-        <span>
-          {% if page.technologies %}
-          <i class="material-icons tooltipped" data-position="left" data-delay="30" data-tooltip="Tehnologije">developer_board</i>
-          {% assign technologies = page.technologies | split: ' ' %}
-          {% for tech in technologies %}
-          <a href="{{site.baseurl}}/technologies#{{tech | slugify}}" target="_blank"><div class="chip">{{tech}}</div></a>
-          {% endfor %}
-        </span>
-        {% endif %}
         {% if page.categories %}
         <span>
           <i class="material-icons tooltipped" data-position="left" data-delay="30" data-tooltip="Kategorije">sort</i>
@@ -44,6 +35,21 @@ js: ["post.js"]
           {% for tag in page.tags %}
           <a href="{{site.baseurl}}/tags#{{tag | slugify}}" target="_blank"><div class="chip">{{tag}}</div></a>
           {% endfor %}
+        </span>
+        {% endif %}
+        {% if page.technologies %}
+        <span>
+          <i class="material-icons tooltipped" data-position="left" data-delay="30" data-tooltip="Tehnologije">developer_board</i>
+          {% assign technologies = page.technologies | split: ' ' %}
+          {% for tech in technologies %}
+          <a href="{{site.baseurl}}/technologies#{{tech | slugify}}" target="_blank"><div class="chip">{{tech}}</div></a>
+          {% endfor %}
+        </span>
+        {% endif %}
+        {% if page.license %}
+        <span>
+          <i class="material-icons tooltipped" data-position="left" data-delay="30" data-tooltip="Licenca">copyright</i>
+          <div class="chip">{{page.license}}</div>
         </span>
         {% endif %}
       </div>
