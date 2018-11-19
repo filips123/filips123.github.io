@@ -173,7 +173,7 @@ Za prispevanje k projektu si preberite [CONTRIBUTING.md](https://github.com/fili
 
 ## Različice
 
-Program za različice uporablja [SemVer](http://semver.org) SemVer. Za ogled objavljenih različic obiščite [oznake na skladišču](https://github.com/filips123/BlogChain/tags).
+Program za različice uporablja [SemVer](http://semver.org). Za ogled objavljenih različic obiščite [oznake na skladišču](https://github.com/filips123/BlogChain/tags).
 
 ## Licenca
 
