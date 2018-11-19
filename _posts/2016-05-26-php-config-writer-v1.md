@@ -14,7 +14,7 @@ PHP Config Writer je PHP knjižnjica za enostavno zapisovanje konfiguracijskih d
 
 <!--more-->
 
-**Ta različica je zastarela. Uporabite [novo različico v2](../../../2018/11/17/php-config-writer-v2).**
+**Ta različica je zastarela. Uporabite [novo različico v2](../../../2018/11/19/php-config-writer-v2).**
 
 ## Namestitev in uporaba
 
