@@ -26,7 +26,7 @@ Za shranjevanje konfiguracijske datoteke mora imeti spletni strežnik zapisovaln
 
 ### S programom Composer
 
-Priporočen način za nameščanje programa je s programom [Composer][link-composer], upravljalcem odvosnosti za PHP.
+Priporočen način za nameščanje programa je s programom [Composer][link-composer], upravljalcem odvisnosti za PHP.
 
 V projekt je potrebno dodati `filips123/config-writer`.
 
